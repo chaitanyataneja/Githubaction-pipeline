@@ -9,6 +9,15 @@ permissions:
 jobs:
   build-and-deploy:
     runs-on: self-hosted
+
+    steps:
+
+      # Checkout Repository
+      - name: Checkout
+        uses: actions/checkout@v4
+
+
+
     steps:
       - name: Azure login
         uses: azure/login@v3
